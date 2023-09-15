@@ -1,0 +1,21 @@
+{
+  "name": "tstemp",
+  "version": "1.0.0",
+  "description": "Template folder for my Typescript Project",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "npx nodemon ./src/index.ts",
+    "build:reload": "tsc ./src/index.ts --watch --outDir build",
+    "build": "tsc ./src/index.ts --outDir build",
+    "start": "node ./build/index.js",
+    "git": "git add . && git commit -m 'initial commit' && git push"
+  },
+  "keywords": [
+    "Typescript"
+  ],
+  "author": "Abi Shrestha",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
